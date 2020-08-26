@@ -1,0 +1,17 @@
+{%extends 'base.html'%}
+{%block title %} date{% endblock %}
+{%block body %}
+
+
+
+<h1>newses for year {{year}} </h1>
+
+{% for news in article_list %}
+<h1>{{news.author}}</h1>
+<h1>{{news.title}}</h1>
+<h1>{{news.description}}</h1>
+<h1>{{news.pub_date}}</h1>
+{% endfor %}
+
+
+    {% endblock %}
